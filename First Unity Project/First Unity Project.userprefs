@@ -1,11 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ForeachLoop.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\DataTypes.cs">
     <Files>
-      <File FileName="Assets\WhileLoop.cs" Line="13" Column="23" />
-      <File FileName="Assets\DoWhileLoop.cs" Line="16" Column="3" />
-      <File FileName="Assets\ForeachLoop.cs" Line="17" Column="39" />
-      <File FileName="Assets\ForLoop.cs" Line="12" Column="3" />
+      <File FileName="Assets\DataTypes.cs" Line="15" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
