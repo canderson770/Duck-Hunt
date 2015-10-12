@@ -7,31 +7,32 @@ public class ClassesAndDataTypes : MonoBehaviour {
 	{
 		public int number1;
 		public int number2;
-		public int number3;
-
-		public Example(int num1, int num2, int num3)
-		{
-			number1 = num1;
-			number2 = num2;
-			number3 = num3;
-		}
-
+	
 		public Example()
 		{
 			number1 = 1;
 			number2 = 2;
-			number3 = 3;
 		}
+
+		public Example(int num1, int num2)
+		{
+			number1 = num1;
+			number2 = num2;
+		}
+		
 	}
-
-	public Example myExample =  new Example(10,12,5);
-
-
-
-
 
 	void Start ()
 	{
+		Example myExample = new Example (10, 12);
+
+		Example myExample2 = myExample;
+		myExample.number1 = 100;
+
+		int num1 = 5;
+		int num2 = num1;
+		num1 = 10;
+
 	}
 	
 	void Update ()
