@@ -51,6 +51,7 @@
      <Compile Include="Assets\ClassesAndDataTypes.cs" />
      <Compile Include="Assets\DataTypes.cs" />
      <Compile Include="Assets\DoWhileLoop.cs" />
+     <Compile Include="Assets\Enumerations.cs" />
      <Compile Include="Assets\FlyScript.cs" />
      <Compile Include="Assets\ForLoop.cs" />
      <Compile Include="Assets\ForeachLoop.cs" />
