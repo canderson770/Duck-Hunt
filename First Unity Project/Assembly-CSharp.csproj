@@ -57,6 +57,7 @@
      <Compile Include="Assets\ForeachLoop.cs" />
      <Compile Include="Assets\IfStatements.cs" />
      <Compile Include="Assets\ScopeAndAccessModifiers.cs" />
+     <Compile Include="Assets\SwitchStatements.cs" />
      <Compile Include="Assets\WhileLoop.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Enumerations.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SwitchStatements.cs">
     <Files>
-      <File FileName="Assets\Enumerations.cs" Line="19" Column="15" />
+      <File FileName="Assets\SwitchStatements.cs" Line="21" Column="3" />
+      <File FileName="Assets\Enumerations.cs" Line="6" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
