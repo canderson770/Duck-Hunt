@@ -1,21 +1,24 @@
 fileFormatVersion: 2
-guid: f4db74c9fa2358c4da265cec47c74d2a
-timeCreated: 1447089149
+guid: addaccba3c1a8ec4db1e720f1cd644ec
+timeCreated: 1447263441
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: dog_0
-    21300002: dog_1
-    21300004: dog_2
-    21300006: dog_3
-    21300008: dog_4
-    21300010: dog_5
-    21300012: dog_6
-    21300014: dog_7
-    21300016: dog_8
-    21300018: dog_9
-    21300020: dog_10
-    21300022: dog_11
+    21300000: dog-new_2
+    21300002: dog-new_3
+    21300004: dog-new_4
+    21300006: dog-new_5
+    21300008: dog-new_6
+    21300010: dog-new_8
+    21300012: dog-new_12
+    21300014: dog-new_13
+    21300016: dog-new_14
+    21300018: dog-new_15
+    21300020: dog-new_16
+    21300022: dog-new_17
+    21300024: dog-new_18
+    21300026: dog-new_19
+    21300028: dog-new_20
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,123 +64,153 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: dog_0
+    - name: dog-new_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 120
-        width: 125
+        x: 35
+        y: 335
+        width: 265
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dog-new_3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 335
+        width: 260
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dog-new_4
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 335
+        width: 255
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dog-new_5
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 340
+        width: 255
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dog-new_6
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 340
+        width: 255
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dog-new_8
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 425
+        width: 115
         height: 115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog_1
+    - name: dog-new_12
       rect:
         serializedVersion: 2
-        x: 125
-        y: 120
-        width: 125
-        height: 115
+        x: 30
+        y: 55
+        width: 245
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog_2
+    - name: dog-new_13
       rect:
         serializedVersion: 2
-        x: 250
-        y: 120
-        width: 125
-        height: 115
+        x: 310
+        y: 55
+        width: 335
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog_3
+    - name: dog-new_14
       rect:
         serializedVersion: 2
-        x: 375
-        y: 120
-        width: 125
-        height: 115
+        x: 685
+        y: 55
+        width: 165
+        height: 235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog_4
+    - name: dog-new_15
       rect:
         serializedVersion: 2
-        x: 500
-        y: 120
-        width: 125
-        height: 115
+        x: 880
+        y: 55
+        width: 165
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog_5
+    - name: dog-new_16
       rect:
         serializedVersion: 2
-        x: 625
-        y: 120
-        width: 125
-        height: 115
+        x: 1085
+        y: 60
+        width: 265
+        height: 225
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog_6
+    - name: dog-new_17
       rect:
         serializedVersion: 2
-        x: 0
-        y: 5
-        width: 125
-        height: 115
+        x: 1415
+        y: 55
+        width: 220
+        height: 245
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog_7
+    - name: dog-new_18
       rect:
         serializedVersion: 2
-        x: 125
-        y: 5
-        width: 125
-        height: 115
+        x: 1665
+        y: 65
+        width: 210
+        height: 205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog_8
+    - name: dog-new_19
       rect:
         serializedVersion: 2
-        x: 250
-        y: 5
-        width: 125
-        height: 115
+        x: 110
+        y: 0
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog_9
+    - name: dog-new_20
       rect:
         serializedVersion: 2
-        x: 375
-        y: 5
-        width: 125
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog_10
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 5
-        width: 125
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog_11
-      rect:
-        serializedVersion: 2
-        x: 625
-        y: 5
-        width: 125
-        height: 115
+        x: 700
+        y: 0
+        width: 20
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
