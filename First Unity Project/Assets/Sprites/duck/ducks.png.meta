@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1d1e59c14622be34287577888b4b3f06
-timeCreated: 1447262224
+timeCreated: 1447692049
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -37,6 +37,11 @@ TextureImporter:
     21300060: ducks_30
     21300062: ducks_31
     21300064: ducks_32
+    21300066: ducks_33
+    21300068: ducks_34
+    21300070: ducks_35
+    21300072: ducks_36
+    21300074: ducks_37
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -85,330 +90,330 @@ TextureImporter:
     - name: ducks_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 133
-        width: 35
-        height: 35
+        x: 40
+        y: 665
+        width: 175
+        height: 170
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 133
-        width: 35
-        height: 35
+        x: 245
+        y: 650
+        width: 175
+        height: 170
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_2
       rect:
         serializedVersion: 2
-        x: 89
-        y: 128
-        width: 35
-        height: 35
+        x: 445
+        y: 640
+        width: 175
+        height: 170
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_3
       rect:
         serializedVersion: 2
-        x: 131
-        y: 131
-        width: 37
-        height: 37
+        x: 675
+        y: 655
+        width: 160
+        height: 185
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_4
       rect:
         serializedVersion: 2
-        x: 166
-        y: 128
-        width: 37
-        height: 37
+        x: 845
+        y: 645
+        width: 160
+        height: 185
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_5
       rect:
         serializedVersion: 2
-        x: 201
-        y: 127
-        width: 37
-        height: 37
+        x: 1005
+        y: 640
+        width: 155
+        height: 185
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ducks_6
-      rect:
-        serializedVersion: 2
-        x: 238
-        y: 127
-        width: 31
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_7
       rect:
         serializedVersion: 2
-        x: 280
-        y: 128
-        width: 20
-        height: 33
+        x: 1190
+        y: 635
+        width: 156
+        height: 160
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_8
       rect:
         serializedVersion: 2
-        x: 305
-        y: 128
-        width: 16
-        height: 33
+        x: 1400
+        y: 640
+        width: 100
+        height: 165
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_9
       rect:
         serializedVersion: 2
-        x: 328
-        y: 128
-        width: 20
-        height: 33
+        x: 1525
+        y: 640
+        width: 80
+        height: 165
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_10
       rect:
         serializedVersion: 2
-        x: 353
-        y: 127
-        width: 16
-        height: 33
+        x: 1640
+        y: 640
+        width: 100
+        height: 165
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_11
       rect:
         serializedVersion: 2
-        x: 7
-        y: 91
-        width: 35
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ducks_12
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 91
-        width: 35
-        height: 35
+        x: 1765
+        y: 635
+        width: 80
+        height: 165
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_13
       rect:
         serializedVersion: 2
-        x: 88
-        y: 86
-        width: 35
-        height: 35
+        x: 35
+        y: 455
+        width: 175
+        height: 170
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_14
       rect:
         serializedVersion: 2
-        x: 130
-        y: 88
-        width: 37
-        height: 37
+        x: 669
+        y: 441
+        width: 160
+        height: 185
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_15
       rect:
         serializedVersion: 2
-        x: 165
-        y: 86
-        width: 37
-        height: 37
+        x: 840
+        y: 430
+        width: 160
+        height: 185
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_16
       rect:
         serializedVersion: 2
-        x: 200
-        y: 84
-        width: 37
-        height: 37
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ducks_17
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 87
-        width: 31
-        height: 32
+        x: 1000
+        y: 415
+        width: 155
+        height: 185
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_18
       rect:
         serializedVersion: 2
-        x: 281
-        y: 88
-        width: 20
-        height: 33
+        x: 1195
+        y: 435
+        width: 156
+        height: 160
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_19
       rect:
         serializedVersion: 2
-        x: 307
-        y: 88
-        width: 16
-        height: 33
+        x: 1405
+        y: 440
+        width: 100
+        height: 165
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_20
       rect:
         serializedVersion: 2
-        x: 329
-        y: 88
-        width: 20
-        height: 33
+        x: 1535
+        y: 440
+        width: 80
+        height: 165
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_21
       rect:
         serializedVersion: 2
-        x: 355
-        y: 88
-        width: 16
-        height: 33
+        x: 1645
+        y: 440
+        width: 100
+        height: 165
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_22
       rect:
         serializedVersion: 2
-        x: 6
-        y: 48
-        width: 35
-        height: 34
+        x: 1775
+        y: 435
+        width: 80
+        height: 165
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_23
       rect:
         serializedVersion: 2
-        x: 47
-        y: 48
-        width: 35
-        height: 35
+        x: 240
+        y: 445
+        width: 175
+        height: 170
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_24
       rect:
         serializedVersion: 2
-        x: 87
-        y: 43
-        width: 35
-        height: 35
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ducks_25
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 47
-        width: 37
-        height: 37
+        x: 440
+        y: 430
+        width: 175
+        height: 170
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_26
       rect:
         serializedVersion: 2
-        x: 164
-        y: 47
-        width: 37
-        height: 37
+        x: 30
+        y: 240
+        width: 175
+        height: 170
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_27
       rect:
         serializedVersion: 2
-        x: 199
-        y: 43
-        width: 37
-        height: 37
+        x: 665
+        y: 235
+        width: 160
+        height: 185
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_28
       rect:
         serializedVersion: 2
-        x: 238
-        y: 43
-        width: 31
-        height: 32
+        x: 835
+        y: 225
+        width: 160
+        height: 185
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_29
       rect:
         serializedVersion: 2
-        x: 280
-        y: 44
-        width: 20
-        height: 33
+        x: 995
+        y: 210
+        width: 155
+        height: 185
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ducks_30
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 44
-        width: 16
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_31
       rect:
         serializedVersion: 2
-        x: 326
-        y: 44
-        width: 20
-        height: 33
+        x: 1190
+        y: 215
+        width: 155
+        height: 160
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: ducks_32
       rect:
         serializedVersion: 2
-        x: 353
-        y: 44
-        width: 16
-        height: 33
+        x: 1400
+        y: 220
+        width: 100
+        height: 165
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ducks_33
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 220
+        width: 80
+        height: 165
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ducks_34
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 220
+        width: 100
+        height: 165
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ducks_35
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 220
+        width: 80
+        height: 165
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ducks_36
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 230
+        width: 175
+        height: 170
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ducks_37
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 215
+        width: 175
+        height: 170
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

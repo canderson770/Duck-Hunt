@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: addaccba3c1a8ec4db1e720f1cd644ec
-timeCreated: 1447263441
+timeCreated: 1447696448
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -70,49 +70,49 @@ TextureImporter:
         x: 35
         y: 335
         width: 265
-        height: 200
+        height: 225
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: dog-new_3
       rect:
         serializedVersion: 2
         x: 340
         y: 335
-        width: 260
-        height: 200
+        width: 265
+        height: 225
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: dog-new_4
       rect:
         serializedVersion: 2
         x: 630
         y: 335
-        width: 255
-        height: 210
+        width: 265
+        height: 225
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: dog-new_5
       rect:
         serializedVersion: 2
         x: 900
         y: 340
-        width: 255
-        height: 200
+        width: 265
+        height: 225
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: dog-new_6
       rect:
         serializedVersion: 2
         x: 1180
         y: 340
-        width: 255
-        height: 210
+        width: 265
+        height: 225
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: dog-new_8
       rect:
@@ -122,7 +122,7 @@ TextureImporter:
         width: 115
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: dog-new_12
       rect:
@@ -132,7 +132,7 @@ TextureImporter:
         width: 245
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: dog-new_13
       rect:
@@ -142,7 +142,7 @@ TextureImporter:
         width: 335
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: dog-new_14
       rect:
@@ -150,9 +150,9 @@ TextureImporter:
         x: 685
         y: 55
         width: 165
-        height: 235
+        height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: dog-new_15
       rect:
@@ -162,7 +162,7 @@ TextureImporter:
         width: 165
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: dog-new_16
       rect:
@@ -172,7 +172,7 @@ TextureImporter:
         width: 265
         height: 225
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: dog-new_17
       rect:
@@ -182,7 +182,7 @@ TextureImporter:
         width: 220
         height: 245
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: dog-new_18
       rect:
@@ -192,27 +192,7 @@ TextureImporter:
         width: 210
         height: 205
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog-new_19
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 0
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: dog-new_20
-      rect:
-        serializedVersion: 2
-        x: 700
-        y: 0
-        width: 20
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

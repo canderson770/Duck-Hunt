@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1d1267771d1de684c9f2f859758a8b31
-timeCreated: 1447263563
+timeCreated: 1447694761
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,7 @@ TextureImporter:
     21300006: gui_7
     21300008: gui_0
     21300010: gui_2
+    21300012: gui_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -73,7 +74,7 @@ TextureImporter:
         width: 130
         height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gui_4
       rect:
@@ -93,7 +94,7 @@ TextureImporter:
         width: 565
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gui_0
       rect:
@@ -110,6 +111,16 @@ TextureImporter:
         serializedVersion: 2
         x: 460
         y: 155
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gui_5
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 55
         width: 35
         height: 35
       alignment: 0
