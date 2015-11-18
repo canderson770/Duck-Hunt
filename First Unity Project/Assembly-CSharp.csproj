@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DogLayerSwitch.cs" />
      <Compile Include="Assets\DuckHealth.cs" />
      <Compile Include="Assets\DuckSpawn.cs" />
      <Compile Include="Assets\ExampleScripts\AnotherClass.cs" />
