@@ -46,19 +46,21 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AnotherClass.cs" />
-     <Compile Include="Assets\Arrays.cs" />
-     <Compile Include="Assets\ClassesAndDataTypes.cs" />
-     <Compile Include="Assets\DataTypes.cs" />
-     <Compile Include="Assets\DoWhileLoop.cs" />
-     <Compile Include="Assets\Enumerations.cs" />
-     <Compile Include="Assets\FlyScript.cs" />
-     <Compile Include="Assets\ForLoop.cs" />
-     <Compile Include="Assets\ForeachLoop.cs" />
-     <Compile Include="Assets\IfStatements.cs" />
-     <Compile Include="Assets\ScopeAndAccessModifiers.cs" />
-     <Compile Include="Assets\SwitchStatements.cs" />
-     <Compile Include="Assets\WhileLoop.cs" />
+     <Compile Include="Assets\DuckHealth.cs" />
+     <Compile Include="Assets\DuckSpawn.cs" />
+     <Compile Include="Assets\ExampleScripts\AnotherClass.cs" />
+     <Compile Include="Assets\ExampleScripts\Arrays.cs" />
+     <Compile Include="Assets\ExampleScripts\ClassesAndDataTypes.cs" />
+     <Compile Include="Assets\ExampleScripts\DataTypes.cs" />
+     <Compile Include="Assets\ExampleScripts\DoWhileLoop.cs" />
+     <Compile Include="Assets\ExampleScripts\Enumerations.cs" />
+     <Compile Include="Assets\ExampleScripts\FlyScript.cs" />
+     <Compile Include="Assets\ExampleScripts\ForLoop.cs" />
+     <Compile Include="Assets\ExampleScripts\ForeachLoop.cs" />
+     <Compile Include="Assets\ExampleScripts\IfStatements.cs" />
+     <Compile Include="Assets\ExampleScripts\ScopeAndAccessModifiers.cs" />
+     <Compile Include="Assets\ExampleScripts\SwitchStatements.cs" />
+     <Compile Include="Assets\ExampleScripts\WhileLoop.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
