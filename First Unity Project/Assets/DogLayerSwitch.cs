@@ -3,12 +3,16 @@ using System.Collections;
 
 public class DogLayerSwitch : MonoBehaviour
 {
-	//void Start () {}
+    public int sortingOrder = 0;
+    private SpriteRenderer sprite;
 
-	//void Update () {}
+    //void Start () {}
 
-	void SwitchLayer()
+    //void Update () {}
+
+    void SwitchLayer()
 	{
-		SpriteRenderer.
-	}
+        sprite = GetComponent<SpriteRenderer>();
+        sprite.sortingLayerName = "Dog";
+    }
 }
