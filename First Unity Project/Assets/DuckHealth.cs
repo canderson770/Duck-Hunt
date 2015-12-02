@@ -9,7 +9,8 @@ public class DuckHealth : MonoBehaviour
 
 	void Start ()
 	{
-		//getcomponent
+        //getcomponent
+        gameObject.GetComponent<Animator>();
 		GameManager.OnDuckMiss += MakeInvincible;
 		GameManager.OnDuckShot += MakeInvincible;
 
