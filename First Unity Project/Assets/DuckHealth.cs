@@ -10,7 +10,7 @@ public class DuckHealth : MonoBehaviour
 	void Start ()
 	{
         //getcomponent
-        gameObject.GetComponent<Animator>();
+		anim = gameObject.GetComponent<Animator>();
 		GameManager.OnDuckMiss += MakeInvincible;
 		GameManager.OnDuckShot += MakeInvincible;
 
@@ -35,8 +35,8 @@ public class DuckHealth : MonoBehaviour
 	{
 		if (isInvincible == false)
 		{
-			anim.Play ("duck death");
 			GameManager.OnDuckShot();
+			anim.Play ("duck death");
 		}
 	}
 

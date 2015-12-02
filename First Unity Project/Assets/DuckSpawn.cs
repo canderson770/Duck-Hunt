@@ -5,7 +5,10 @@ public class DuckSpawn : MonoBehaviour
 {
 	public GameObject duck;
 
-	//void Start (){}
+	void Start ()
+	{
+		GameManager.OnSpawnDucks += SpawnDuck;
+	}
 	
 	//void Update (){}
 

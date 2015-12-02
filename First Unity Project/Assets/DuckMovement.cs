@@ -11,6 +11,7 @@ public class DuckMovement : MonoBehaviour
 
 	void Start ()
 	{
+		bounce = 0;
 		GameManager.OnDuckShot += StopMovement;
 		GameManager.OnDuckMiss += FlyAway;
 		RandomDirection();
@@ -30,13 +31,13 @@ public class DuckMovement : MonoBehaviour
 	{
 		direction = new Vector3 (direction.x * _dir.x, direction.y * _dir.y, 0);
 
-//		bounce++;
+		bounce++;
 
-//		if (bounce >= bounceMax)
-//		{
-//			direction = new Vector3 (0, 1, 0);
-//			GameManager.OnDuckMiss();
-//		}
+		if (bounce >= bounceMax)
+		{
+			direction = new Vector3 (0, 1, 0);
+			GameManager.OnDuckMiss();
+		}
 	}
 
 	public void StopMovement()

@@ -32,8 +32,9 @@ public class Shooter : MonoBehaviour
 			{
 				if (hit.transform.tag == "Duck")
 				{
-					hit.transform.GetComponent<DuckHealth>();
-					//DuckHealth.Destroy();
+					DuckHealth health = hit.transform.GetComponent<DuckHealth>();
+					health.KillDuck();
+					Debug.Log ("Duck Shot!");
 				}
 			}
 		}

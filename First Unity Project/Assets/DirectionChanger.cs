@@ -6,7 +6,12 @@ public class DirectionChanger: MonoBehaviour
 	public enum Changer {Horizontal, Vertical};
 	public Changer direction;
 
-	//void Start () {}
+	void Start ()
+	{
+		GameManager.OnDuckShot += TurnOff;
+		GameManager.OnDuckMiss += TurnOff;
+		GameManager.OnSpawnDucks += TurnOn;
+	}
 	
 	//void Update () {}
 
@@ -25,5 +30,15 @@ public class DirectionChanger: MonoBehaviour
 				movement.DirectionChanger(new Vector3(1f, -1f, 0));
 			}
 		}
+	}
+
+	public void TurnOff()
+	{
+		gameObject.SetActive (false);
+	}
+
+	public void TurnOn()
+	{
+		gameObject.SetActive (true);
 	}
 }

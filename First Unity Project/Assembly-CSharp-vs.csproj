@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\DirectionChanger.cs" />
+     <Compile Include="Assets\DogControl.cs" />
      <Compile Include="Assets\DogLayerSwitch.cs" />
      <Compile Include="Assets\DuckHealth.cs" />
      <Compile Include="Assets\DuckMovement.cs" />
