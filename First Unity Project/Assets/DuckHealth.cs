@@ -4,13 +4,13 @@ using System.Collections;
 public class DuckHealth : MonoBehaviour
 {
 	Animator anim;
-
-	bool isInvincible;
+    bool isInvincible;
 
 	void Start ()
 	{
         //getcomponent
-		anim = gameObject.GetComponent<Animator>();
+        isInvincible = false;
+        anim = gameObject.GetComponent<Animator>();
 		GameManager.OnDuckMiss += MakeInvincible;
 		GameManager.OnDuckShot += MakeInvincible;
 
@@ -28,7 +28,7 @@ public class DuckHealth : MonoBehaviour
 		{
 			GameManager.OnDuckFlyAway();
 			Destroy (this.gameObject);
-		}
+        }
 	}
 
 	public void KillDuck()
@@ -37,7 +37,8 @@ public class DuckHealth : MonoBehaviour
 		{
 			GameManager.OnDuckShot();
 			anim.Play ("duck death");
-		}
+            
+        }
 	}
 
 	public void MakeInvincible()

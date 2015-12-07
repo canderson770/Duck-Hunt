@@ -9,11 +9,12 @@ public class GameManager : MonoBehaviour
 	public static DuckDel OnDuckDeath;
 	public static DuckDel OnDuckFlyAway;
 	public static DuckDel OnDuckMiss;
+    public static DuckDel OnStartGame;
 
 
-	// Use this for initialization
-	//void Start () {}
-	
-	// Update is called once per frame
-	//void Update () {}
+    // Use this for initialization
+    //void Start () {}
+
+    // Update is called once per frame
+    //void Update () {}
 }

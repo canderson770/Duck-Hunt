@@ -4,15 +4,28 @@ using System.Collections;
 public class Shooter : MonoBehaviour
 {
 	RaycastHit hit;
+    DuckHealth health;
 
-	private int bulletAmount;
+    public AudioClip shot;
+    public AudioSource source;
+    private float volMin = .5f;
+    private float volMax = 1f;
+
+    public GameObject bullet1;
+    public GameObject bullet2;
+    public GameObject bullet3;
+
+
+    private int bulletAmount;
 	public int maxBullets;
 
 	// Use this for initialization
 	void Start ()
 	{
-		GameManager.OnSpawnDucks += ResetBullets;
-	}
+        maxBullets = 3;
+        bulletAmount = 50;
+        GameManager.OnSpawnDucks += ResetBullets;
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -20,7 +33,11 @@ public class Shooter : MonoBehaviour
 		if (Input.GetMouseButtonDown (0))
 		{
 			bulletAmount--;
-			if (bulletAmount <= 0)
+            BulletGUI(bulletAmount);
+            float vol = Random.Range(volMin, volMax);
+            source.PlayOneShot(shot, vol);
+
+            if (bulletAmount <= 0)
 			{
 				GameManager.OnDuckMiss();
 			}
@@ -30,12 +47,14 @@ public class Shooter : MonoBehaviour
 
 			if (Physics.Raycast (Camera.main.ScreenToWorldPoint(mousePos), Camera.main.transform.forward, out hit, Mathf.Infinity))
 			{
-				if (hit.transform.tag == "Duck")
-				{
-					DuckHealth health = hit.transform.GetComponent<DuckHealth>();
-					health.KillDuck();
-					Debug.Log ("Duck Shot!");
-				}
+                if (hit.transform.tag == "Duck")
+                {
+                    health = hit.transform.GetComponent<DuckHealth>();
+                    health.KillDuck();
+                    Debug.Log("Duck Shot!");
+                }
+                else
+                    Debug.Log("Miss");
 			}
 		}
 	}
@@ -43,5 +62,29 @@ public class Shooter : MonoBehaviour
 	public void ResetBullets()
 	{
 		bulletAmount = maxBullets;
-	}
+        bullet3.SetActive(true);
+        bullet2.SetActive(true);
+        bullet1.SetActive(true);
+    }
+
+    public void BulletGUI(int bullets)
+    {
+        if (bullets == 2)
+        {
+            bullet3.SetActive(false);
+        }
+        else if (bullets == 1)
+        {
+            bullet3.SetActive(false); bullet2.SetActive(false);
+        }
+        else if (bullets <= 0)
+        {
+            bullet3.SetActive(false); bullet2.SetActive(false); bullet1.SetActive(false);
+        }
+        else
+        {
+            bullet3.SetActive(true); bullet2.SetActive(true); bullet1.SetActive(true);
+        }
+
+    }
 }
