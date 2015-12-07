@@ -25,10 +25,8 @@ public class titleScreen : MonoBehaviour
     {
         if (Input.anyKey)
         {
+			GameManager.OnStartGame();
             title.SetActive(false);
-            GameManager.OnStartGame();
-            //dog.PlayIntro();
-            print("dog walk");
         }
     }
 }

@@ -4,21 +4,29 @@ using System.Collections;
 
 public class GUI : MonoBehaviour
 {
-    Text text;
-    private DuckSpawn duckSpawnClass;
+	/*
+    Text myText;
+    //private DuckSpawn duckSpawnClass;
+	private Shooter shooter;
+	private int defaultScore = 000000;
 
     // Use this for initialization
     void Start ()
     {
-        text = GetComponent<Text>();
-        //        GameManager.OnSpawnDucks += setRoundNumber;
+        scoreText = GetComponent<Text>();
     }
 	
 	// Update is called once per frame
 	//void Update () {}
-
-    public void setRoundNumber()
+	/*
+    public void setRound()
     {
         text.text = "R = " + duckSpawnClass.roundNum;
     }
+
+	public void setScore()
+	{
+		int newText = defaultScore + shooter.score;
+		myText.text = newText.ToString();
+	} */
 }

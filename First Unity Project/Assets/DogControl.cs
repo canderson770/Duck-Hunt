@@ -6,6 +6,7 @@ public class DogControl : MonoBehaviour
 	Animator anim;
     public AudioClip laugh;
     public AudioClip bark;
+	public AudioClip gotDuck;
     public AudioClip intro;
     public AudioSource source;
 
@@ -35,7 +36,7 @@ public class DogControl : MonoBehaviour
 
     public void PlayIntro()
     {
-        anim.Play("dog walk");
+        anim.Play("dog walking");
         source.PlayOneShot(intro, 1);
     }
 
@@ -47,5 +48,6 @@ public class DogControl : MonoBehaviour
     public void PlayPopup()
 	{
 		anim.Play ("dog popup");
+		source.PlayOneShot(gotDuck, 1);
 	}
 }

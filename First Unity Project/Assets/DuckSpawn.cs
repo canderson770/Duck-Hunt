@@ -4,10 +4,10 @@ using System.Collections;
 public class DuckSpawn : MonoBehaviour
 {
 	public GameObject duck;
-    public int roundNum;
+    public int duckNum;
 	void Start ()
 	{
-        roundNum = 1;
+        duckNum = 0;
         GameManager.OnSpawnDucks += SpawnDuck;
 	}
 	
@@ -16,6 +16,7 @@ public class DuckSpawn : MonoBehaviour
 	public void SpawnDuck()
 	{
 		Instantiate(duck, transform.position, Quaternion.identity);
-        roundNum++;
+        duckNum++;
+		print (duckNum);
 	}
 }

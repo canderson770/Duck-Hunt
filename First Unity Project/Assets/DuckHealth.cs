@@ -22,6 +22,7 @@ public class DuckHealth : MonoBehaviour
 	{
 		if (hit.tag == "KillZone")
 		{
+			GameManager.OnDuckDeath();
 			Destroy (this.gameObject);
 		}
 		if (hit.tag == "FlyAwayZone")
