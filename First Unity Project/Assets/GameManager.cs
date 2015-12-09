@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class GameManager : MonoBehaviour
@@ -14,14 +15,26 @@ public class GameManager : MonoBehaviour
 
 
 	public GameObject flyAwaySky;
+    public GameObject roundPopup;
+    public GameObject roundPopupNumText;
+    Text roundPopupText;
+    Shooter shoot;
 
     // Use this for initialization
     void Start ()
 	{
+        GameObject shooter = GameObject.Find("Main Camera");
+        shoot = shooter.GetComponent<Shooter>();
+        roundPopupText = roundPopupNumText.GetComponent<Text>();
+
 		GameManager.OnDuckMiss += FlyAwaySkyOn;
 		GameManager.OnDuckFlyAway += FlyAwaySkyOff;
 		GameManager.OnSpawnDucks += FlyAwaySkyOff;
-	}
+        GameManager.OnNewRound += FlyAwaySkyOff;
+        GameManager.OnStartGame += DisplayRoundNumOn;
+        GameManager.OnNewRound += DisplayRoundNumOn;
+        GameManager.OnSpawnDucks += DisplayRoundNumOff;
+    }
 
     // Update is called once per frame
     //void Update () {}
@@ -35,4 +48,16 @@ public class GameManager : MonoBehaviour
 	{
 		flyAwaySky.SetActive (false);
 	}
+
+    public void DisplayRoundNumOn()
+    {
+        roundPopupText.text = "ROUND\n" + shoot.roundNum;
+        roundPopup.SetActive(true);
+    }
+
+    public void DisplayRoundNumOff()
+    {
+        roundPopupText.text = "ROUND\n" + shoot.roundNum;
+        roundPopup.SetActive(false);
+    }
 }

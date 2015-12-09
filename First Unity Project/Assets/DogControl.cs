@@ -18,6 +18,7 @@ public class DogControl : MonoBehaviour
 		GameManager.OnDuckDeath += PlayPopup;
 		GameManager.OnDuckFlyAway += PlayLaugh;
         GameManager.OnStartGame += PlayIntro;
+        GameManager.OnNewRound += PlayNewRound;
 	}
 	
 	// Update is called once per frame
@@ -50,4 +51,9 @@ public class DogControl : MonoBehaviour
 		anim.Play ("dog popup");
 		source.PlayOneShot(gotDuck, 1);
 	}
+
+    public void PlayNewRound()
+    {
+        anim.Play("dog walking");
+    }
 }

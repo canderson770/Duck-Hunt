@@ -4,11 +4,15 @@ using System.Collections;
 public class DuckHealth : MonoBehaviour
 {
 	Animator anim;
-    bool isInvincible;
+    public bool isInvincible;
+    private GameObject shoot;
+    Shooter shooter;
 
-	void Start ()
+    void Start ()
 	{
         //getcomponent
+        shoot = GameObject.Find("Main Camera");
+        shooter = shoot.GetComponent<Shooter>();
         isInvincible = false;
         anim = gameObject.GetComponent<Animator>();
 		GameManager.OnDuckMiss += MakeInvincible;
@@ -20,17 +24,34 @@ public class DuckHealth : MonoBehaviour
 
 	void OnTriggerEnter(Collider hit)
 	{
-		if (hit.tag == "KillZone")
-		{
-			GameManager.OnDuckDeath();
-			Destroy (this.gameObject);
-		}
+        if (hit.tag == "KillZone")
+        {
+            if (shooter.duckNum >= 10)
+            {
+                GameManager.OnNewRound();
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                GameManager.OnDuckDeath();
+                Destroy(this.gameObject);
+            }
+        }
 		if (hit.tag == "FlyAwayZone")
 		{
-			GameManager.OnDuckFlyAway();
-			Destroy (this.gameObject);
+            if (shooter.duckNum >= 10)
+            {
+                GameManager.OnNewRound();
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                GameManager.OnDuckFlyAway();
+                Destroy(this.gameObject);
+            }
         }
-	}
+        print(shooter.duckNum);
+    }
 
 	public void KillDuck()
 	{

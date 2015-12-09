@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: fa1f3693db5fb774a9999cafa4c6f49b
-timeCreated: 1447264008
-licenseType: Pro
+guid: fd8af952edaa9cf4d96bad48a0b7ec0e
+timeCreated: 1449641498
+licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: round_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -32,24 +33,34 @@ TextureImporter:
     filterMode: -1
     aniso: 16
     mipBias: -1
-    wrapMode: 0
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: 0
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: round_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 191
+        width: 381
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

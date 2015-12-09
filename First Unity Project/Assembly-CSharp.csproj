@@ -68,6 +68,7 @@
      <Compile Include="Assets\GUI.cs" />
      <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\Shooter.cs" />
+     <Compile Include="Assets\scroll.cs" />
      <Compile Include="Assets\titleScreen.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -10,9 +10,15 @@ public class DogLayerSwitch : MonoBehaviour
 
     //void Update () {}
 
-    void SwitchLayer()
+    void SwitchLayerBack()
 	{
         sprite = GetComponent<SpriteRenderer>();
         sprite.sortingLayerName = "Dog";
+    }
+
+    void SwitchLayerFront()
+    {
+        sprite = GetComponent<SpriteRenderer>();
+        sprite.sortingLayerName = "Foreground";
     }
 }
