@@ -40,6 +40,9 @@ public class Shooter : MonoBehaviour
     public GameObject redDuck9;
     public GameObject redDuck10;
 
+	public GameObject whiteDucks;
+	Animator anim;
+
     public int duckNum;
     private int duckShotNum;
     bool noClick;
@@ -47,9 +50,11 @@ public class Shooter : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+		anim = whiteDucks.GetComponent<Animator> ();
+
         scoreTxt = scoreObject.GetComponent<Text>();
         roundText = roundObject.GetComponent<Text>();
-        duckNum = 0;
+        duckNum = 1;
         duckShotNum = 0;
         roundNum = 1;
 
@@ -57,6 +62,9 @@ public class Shooter : MonoBehaviour
         bulletAmount = 50;
         GameManager.OnSpawnDucks += ResetBullets;
         GameManager.OnSpawnDucks += ClickOn;
+		GameManager.OnSpawnDucks += DuckGUI;
+		GameManager.OnDuckMiss += DuckGUIStop;
+		GameManager.OnDuckShot += DuckGUIStop;
         GameManager.OnNewRound += ResetRound;
         GameManager.OnNewRound += ResetBullets;
         GameManager.OnNewRound += RoundNum;
@@ -101,10 +109,10 @@ public class Shooter : MonoBehaviour
                             DuckHealth health = hit.transform.GetComponent<DuckHealth>();
                             health.KillDuck();
                             SetScore();
-                            duckNum++;
                             duckShotNum++;
-                            DuckGUI();
-                        }
+                            DuckGUIShot();
+							duckNum++;
+						}
                     }
                     else
                     {
@@ -128,10 +136,10 @@ public class Shooter : MonoBehaviour
                             DuckHealth health = hit.transform.GetComponent<DuckHealth>();
                             health.KillDuck();
                             SetScore();
-                            duckNum++;
                             duckShotNum++;
-                            DuckGUI();
-                        }
+                            DuckGUIShot();
+							duckNum++;
+						}
                     }
                 }
             }
@@ -157,10 +165,10 @@ public class Shooter : MonoBehaviour
         redDuck8.SetActive(false);
         redDuck9.SetActive(false);
         redDuck10.SetActive(false);
-        duckNum = 0;
+        duckNum = 1;
     }
 
-    public void DuckGUI()
+    public void DuckGUIShot()
     {
         switch (duckNum)
         {
@@ -199,23 +207,57 @@ public class Shooter : MonoBehaviour
         }
     }
 
-    public void ResetBullets()
-    {
-        bulletAmount = maxBullets;
-        bullet3.SetActive(true);
-        bullet2.SetActive(true);
-        bullet1.SetActive(true);
-    }
+	public void DuckGUI()
+	{
+		print ("duckNum = " + duckNum);
+		switch (duckNum)
+		{
+		case 1:
+			anim.Play ("1"); break;
+		case 2:
+			anim.Play ("2"); break;
+		case 3:
+			anim.Play ("3"); break;
+		case 4:
+			anim.Play ("4"); break;
+		case 5:
+			anim.Play ("5"); break;
+		case 6:
+			anim.Play ("6"); break;
+		case 7:
+			anim.Play ("7"); break;
+		case 8:
+			anim.Play ("8"); break;
+		case 9:
+			anim.Play ("9"); break;
+		case 10:
+			anim.Play ("10"); break;
+		default:break;
+		}
+	}
 
-    public void BulletGUI(int bullets)
-    {
-        if (bullets == 2)
-        {
-            bullet3.SetActive(false);
-        }
-        else if (bullets == 1)
-        {
-            bullet3.SetActive(false); bullet2.SetActive(false);
+	public void DuckGUIStop()
+	{
+			anim.Play ("no flash");
+	}
+		
+		public void ResetBullets()
+		{
+			bulletAmount = maxBullets;
+			bullet3.SetActive(true);
+			bullet2.SetActive(true);
+			bullet1.SetActive(true);
+		}
+		
+		public void BulletGUI(int bullets)
+		{
+			if (bullets == 2)
+			{
+				bullet3.SetActive(false);
+			}
+			else if (bullets == 1)
+			{
+				bullet3.SetActive(false); bullet2.SetActive(false);
         }
         else if (bullets <= 0)
         {
@@ -241,6 +283,8 @@ public class Shooter : MonoBehaviour
             source.PlayOneShot(lose, 1);
             roundNum = 1;
             roundText.text = "R = " + roundNum.ToString();
+			score = 0;
+			scoreTxt.text = score.ToString().PadLeft(6, '0');
         }
         duckShotNum = 0;
     }
@@ -250,133 +294,3 @@ public class Shooter : MonoBehaviour
         noClick = false;
     }
 }
-
-/*
-    public void WinLose()
-    {
-        switch (duckNum)
-        {
-            case 1:
-                redDuck1.SetActive(true);
-                redDuck2.SetActive(false);
-                redDuck3.SetActive(false);
-                redDuck4.SetActive(false);
-                redDuck5.SetActive(false);
-                redDuck6.SetActive(false);
-                redDuck7.SetActive(false);
-                redDuck8.SetActive(false);
-                redDuck9.SetActive(false);
-                redDuck10.SetActive(false); break;
-            case 2:
-                redDuck1.SetActive(true);
-                redDuck2.SetActive(true);
-                redDuck3.SetActive(false);
-                redDuck4.SetActive(false);
-                redDuck5.SetActive(false);
-                redDuck6.SetActive(false);
-                redDuck7.SetActive(false);
-                redDuck8.SetActive(false);
-                redDuck9.SetActive(false);
-                redDuck10.SetActive(false); break;
-            case 3:
-                redDuck1.SetActive(true);
-                redDuck2.SetActive(true);
-                redDuck3.SetActive(true);
-                redDuck4.SetActive(false);
-                redDuck5.SetActive(false);
-                redDuck6.SetActive(false);
-                redDuck7.SetActive(false);
-                redDuck8.SetActive(false);
-                redDuck9.SetActive(false);
-                redDuck10.SetActive(false); break;
-            case 4:
-                redDuck1.SetActive(true);
-                redDuck2.SetActive(true);
-                redDuck3.SetActive(true);
-                redDuck4.SetActive(true);
-                redDuck5.SetActive(false);
-                redDuck6.SetActive(false);
-                redDuck7.SetActive(false);
-                redDuck8.SetActive(false);
-                redDuck9.SetActive(false);
-                redDuck10.SetActive(false); break;
-            case 5:
-                redDuck1.SetActive(true);
-                redDuck2.SetActive(true);
-                redDuck3.SetActive(true);
-                redDuck4.SetActive(true);
-                redDuck5.SetActive(true);
-                redDuck6.SetActive(false);
-                redDuck7.SetActive(false);
-                redDuck8.SetActive(false);
-                redDuck9.SetActive(false);
-                redDuck10.SetActive(false); break;
-            case 6:
-                redDuck1.SetActive(true);
-                redDuck2.SetActive(true);
-                redDuck3.SetActive(true);
-                redDuck4.SetActive(true);
-                redDuck5.SetActive(true);
-                redDuck6.SetActive(true);
-                redDuck7.SetActive(false);
-                redDuck8.SetActive(false);
-                redDuck9.SetActive(false);
-                redDuck10.SetActive(false); break;
-            case 7:
-                redDuck1.SetActive(true);
-                redDuck2.SetActive(true);
-                redDuck3.SetActive(true);
-                redDuck4.SetActive(true);
-                redDuck5.SetActive(true);
-                redDuck6.SetActive(true);
-                redDuck7.SetActive(true);
-                redDuck8.SetActive(false);
-                redDuck9.SetActive(false);
-                redDuck10.SetActive(false); break;
-            case 8:
-                redDuck1.SetActive(true);
-                redDuck2.SetActive(true);
-                redDuck3.SetActive(true);
-                redDuck4.SetActive(true);
-                redDuck5.SetActive(true);
-                redDuck6.SetActive(true);
-                redDuck7.SetActive(true);
-                redDuck8.SetActive(true);
-                redDuck9.SetActive(false);
-                redDuck10.SetActive(false); break;
-            case 9:
-                redDuck1.SetActive(true);
-                redDuck2.SetActive(true);
-                redDuck3.SetActive(true);
-                redDuck4.SetActive(true);
-                redDuck5.SetActive(true);
-                redDuck6.SetActive(true);
-                redDuck7.SetActive(true);
-                redDuck8.SetActive(true);
-                redDuck9.SetActive(true);
-                redDuck10.SetActive(false); break;
-            case 10:
-                redDuck1.SetActive(true);
-                redDuck2.SetActive(true);
-                redDuck3.SetActive(true);
-                redDuck4.SetActive(true);
-                redDuck5.SetActive(true);
-                redDuck6.SetActive(true);
-                redDuck7.SetActive(true);
-                redDuck8.SetActive(true);
-                redDuck9.SetActive(true);
-                redDuck10.SetActive(true); break;
-            default:
-                redDuck1.SetActive(false);
-                redDuck2.SetActive(false);
-                redDuck3.SetActive(false);
-                redDuck4.SetActive(false);
-                redDuck5.SetActive(false);
-                redDuck6.SetActive(false);
-                redDuck7.SetActive(false);
-                redDuck8.SetActive(false);
-                redDuck9.SetActive(false);
-                redDuck10.SetActive(false); break;
-        }
-    }
-}*/

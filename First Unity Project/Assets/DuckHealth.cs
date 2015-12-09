@@ -26,7 +26,7 @@ public class DuckHealth : MonoBehaviour
 	{
         if (hit.tag == "KillZone")
         {
-            if (shooter.duckNum >= 10)
+            if (shooter.duckNum > 10)
             {
                 GameManager.OnNewRound();
                 Destroy(this.gameObject);
@@ -39,7 +39,7 @@ public class DuckHealth : MonoBehaviour
         }
 		if (hit.tag == "FlyAwayZone")
 		{
-            if (shooter.duckNum >= 10)
+            if (shooter.duckNum > 10)
             {
                 GameManager.OnNewRound();
                 Destroy(this.gameObject);
