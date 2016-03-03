@@ -29,16 +29,7 @@ public class Shooter : MonoBehaviour
     private int bulletAmount;
     public int maxBullets;
 
-    public GameObject redDuck1;
-    public GameObject redDuck2;
-    public GameObject redDuck3;
-    public GameObject redDuck4;
-    public GameObject redDuck5;
-    public GameObject redDuck6;
-    public GameObject redDuck7;
-    public GameObject redDuck8;
-    public GameObject redDuck9;
-    public GameObject redDuck10;
+    public GameObject[] redDuck;
 
 	public GameObject whiteDucks;
 	Animator anim;
@@ -155,59 +146,16 @@ public class Shooter : MonoBehaviour
 
     public void ResetRound()
     {
-		//for(int i = 0; i < 10; i++)
-	
-        redDuck1.SetActive(false);
-        redDuck2.SetActive(false);
-        redDuck3.SetActive(false);
-        redDuck4.SetActive(false);
-        redDuck5.SetActive(false);
-        redDuck6.SetActive(false);
-        redDuck7.SetActive(false);
-        redDuck8.SetActive(false);
-        redDuck9.SetActive(false);
-        redDuck10.SetActive(false);
-		
+		for(int i = 0; i < 10; i++)
+		{
+			redDuck [i].SetActive (false);
+		}
         duckNum = 1;
     }
 
     public void DuckGUIShot()
     {
-        switch (duckNum)
-        {
-            case 1:
-                redDuck1.SetActive(true); break;
-            case 2:
-                redDuck2.SetActive(true); break;
-            case 3:
-                redDuck3.SetActive(true); break;
-            case 4:
-                redDuck4.SetActive(true); break;
-            case 5:
-                redDuck5.SetActive(true); break;
-            case 6:
-                redDuck6.SetActive(true); break;
-            case 7:
-                redDuck7.SetActive(true); break;
-            case 8:
-                redDuck8.SetActive(true); break;
-            case 9:
-                redDuck9.SetActive(true); break;
-            case 10:
-                redDuck10.SetActive(true); break;
-            default:
-                redDuck1.SetActive(false);
-                redDuck2.SetActive(false);
-                redDuck3.SetActive(false);
-                redDuck4.SetActive(false);
-                redDuck5.SetActive(false);
-                redDuck6.SetActive(false);
-                redDuck7.SetActive(false);
-                redDuck8.SetActive(false);
-                redDuck9.SetActive(false);
-                redDuck10.SetActive(false);
-                break;
-        }
+		redDuck [duckNum-1].SetActive (true);
     }
 
 	public void DuckGUI()
