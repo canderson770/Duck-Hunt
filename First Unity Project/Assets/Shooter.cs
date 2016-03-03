@@ -155,6 +155,8 @@ public class Shooter : MonoBehaviour
 
     public void ResetRound()
     {
+		//for(int i = 0; i < 10; i++)
+	
         redDuck1.SetActive(false);
         redDuck2.SetActive(false);
         redDuck3.SetActive(false);
@@ -165,6 +167,7 @@ public class Shooter : MonoBehaviour
         redDuck8.SetActive(false);
         redDuck9.SetActive(false);
         redDuck10.SetActive(false);
+		
         duckNum = 1;
     }
 
