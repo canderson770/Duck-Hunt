@@ -79,7 +79,7 @@ public class Shooter : MonoBehaviour
                     GameManager.OnDuckMiss();
                 }
 
-                if (-1 < bulletAmount && bulletAmount < 4)
+                if (0 <= bulletAmount && bulletAmount <= 3)
                 {
                     float vol = Random.Range(volMin, volMax);
                     source.PlayOneShot(shot, vol);

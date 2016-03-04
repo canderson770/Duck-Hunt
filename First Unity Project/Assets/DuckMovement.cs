@@ -3,42 +3,65 @@ using System.Collections;
 
 public class DuckMovement : MonoBehaviour
 {
-	public float speed;
+	private float speed = .1f;
 	public Vector3 direction;
 
     private int bounce;
 	public int bounceMax;
     Shooter shoot;
 
+	public Animator anim;
+
     void Start ()
 	{
+		anim = GetComponent<Animator> ();
         GameObject shooter = GameObject.Find("Main Camera");
         shoot = shooter.GetComponent<Shooter>();
         bounce = 0;
         GameManager.OnDuckShot += StopMovement;
 		GameManager.OnDuckMiss += FlyAway;
 		RandomDirection();
+
     }
 	
 	void Update ()
 	{
-		transform.position = transform.position + (direction * speed);
+		transform.position = transform.position + (direction * (speed + shoot.roundNum/10));
     }
 
 	public void RandomDirection()
 	{
 		direction = new Vector3 (Random.Range(-1f, 1f), Random.Range(.2f, 1f), 0);
+
+		if (direction.x > 0 && direction.y > 0)
+			anim.Play ("duck up right");
+		if (direction.x < 0 && direction.y > 0)
+			anim.Play ("duck up left");
+		if (direction.x > 0 && direction.y < 0)
+			anim.Play ("duck fly right");
+		if (direction.x < 0 && direction.y < 0)
+			anim.Play ("duck fly left");
     }
 
 	public void DirectionChanger(Vector3 _dir)
 	{
 		direction = new Vector3 (direction.x * _dir.x, direction.y * _dir.y, 0);
 
+		if (direction.x > 0 && direction.y > 0)
+			anim.Play ("duck up right");
+		if (direction.x < 0 && direction.y > 0)
+			anim.Play ("duck up left");
+		if (direction.x > 0 && direction.y < 0)
+			anim.Play ("duck fly right");
+		if (direction.x < 0 && direction.y < 0)
+			anim.Play ("duck fly left");
+		
         bounce++;
 
 		if (bounce >= bounceMax)
 		{
 			direction = new Vector3 (0, 1, 0);
+			anim.Play ("duck up right");
 			GameManager.OnDuckMiss();
 		}
 	}
@@ -57,4 +80,5 @@ public class DuckMovement : MonoBehaviour
 	{
         direction = new Vector3 (0, 1, 0);
     }
+		
 }

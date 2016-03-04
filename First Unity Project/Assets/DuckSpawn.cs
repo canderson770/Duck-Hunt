@@ -10,8 +10,8 @@ public class DuckSpawn : MonoBehaviour
 	void Start ()
 	{
         GameManager.OnSpawnDucks += SpawnDuck;
-		spawnPoints = new List<Transform> ();
-		SetSpawnPoint.PassSpawnPointTransform += AddToSpawnPointsList;
+//		spawnPoints = new List<Transform> ();
+//		SetSpawnPoint.PassSpawnPointTransform += AddToSpawnPointsList;
 	}
 	
 
