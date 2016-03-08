@@ -1,15 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shooter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PauseGame.cs">
     <Files>
-      <File FileName="Assets\DuckMovement.cs" Line="12" Column="2" />
+      <File FileName="Assets\PauseGame.cs" Line="31" Column="6" />
+      <File FileName="Assets\DuckMovement.cs" Line="32" Column="34" />
       <File FileName="Assets\DuckSpawn.cs" Line="12" Column="47" />
-      <File FileName="Assets\DogControl.cs" Line="11" Column="4" />
-      <File FileName="Assets\Shooter.cs" Line="41" Column="1" />
-      <File FileName="Assets\GameManager.cs" Line="27" Column="37" />
+      <File FileName="Assets\DogControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Shooter.cs" Line="234" Column="31" />
+      <File FileName="Assets\GameManager.cs" Line="16" Column="1" />
       <File FileName="Assets\DirectionChanger.cs" Line="1" Column="1" />
       <File FileName="Assets\DuckHealth.cs" Line="1" Column="1" />
-      <File FileName="Assets\titleScreen.cs" Line="1" Column="1" />
+      <File FileName="Assets\titleScreen.cs" Line="15" Column="42" />
+      <File FileName="Assets\CloudMovement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

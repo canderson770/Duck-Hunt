@@ -6,11 +6,13 @@ public class DuckMovement : MonoBehaviour
 	private float speed = .1f;
 	public Vector3 direction;
 
+	bool paused;
+
     private int bounce;
 	public int bounceMax;
     Shooter shoot;
 
-	public Animator anim;
+	Animator anim;
 
     void Start ()
 	{
@@ -21,12 +23,22 @@ public class DuckMovement : MonoBehaviour
         GameManager.OnDuckShot += StopMovement;
 		GameManager.OnDuckMiss += FlyAway;
 		RandomDirection();
+		paused = false;
 
     }
 	
 	void Update ()
 	{
-		transform.position = transform.position + (direction * (speed + shoot.roundNum/10));
+		if (Input.GetKeyUp (KeyCode.P) || Input.GetKeyUp(KeyCode.Escape))
+			paused = !paused;
+		if (paused)
+			Time.timeScale = 0;
+		if (!paused) 
+		{
+			Time.timeScale = 1;
+			transform.position = transform.position + (direction * (speed + shoot.roundNum / 10));
+		}
+
     }
 
 	public void RandomDirection()

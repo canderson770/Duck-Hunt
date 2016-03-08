@@ -12,7 +12,7 @@ public class titleScreen : MonoBehaviour
 	void Start ()
     {
         title.SetActive(true);
-        source.PlayOneShot(startMusic, 1);
+        source.PlayOneShot(startMusic, .6f);
     }
 	
 	// Update is called once per frame
