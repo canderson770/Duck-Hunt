@@ -17,18 +17,26 @@ public class PauseGame : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyUp (KeyCode.P) || Input.GetKeyUp(KeyCode.Escape))
+		if (Input.GetKeyUp (KeyCode.P) || Input.GetKeyUp (KeyCode.Escape))
+		{
 			paused = !paused;
+
+			if (paused)
+			{
+				source.PlayOneShot (pauseSound);
+				pausedPopup.SetActive (true);
+			}
+			else if (!paused)
+				pausedPopup.SetActive (false);
+		}
+
 		if (paused) 
 		{
-			//source.PlayOneShot(pauseSound);
-			//pausedPopup.SetActive (true);
 			Time.timeScale = 0;
 		}
 
 		else if (!paused)
 		{
-			//pausedPopup.SetActive (false);
 			Time.timeScale = 1;
 		}
 	}
