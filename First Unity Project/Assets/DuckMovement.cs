@@ -12,11 +12,14 @@ public class DuckMovement : MonoBehaviour
 	public int bounceMax;
     Shooter shoot;
 
+	SpriteRenderer duckSprite;
+
 	Animator anim;
 
     void Start ()
 	{
 		anim = GetComponent<Animator> ();
+		duckSprite = GetComponent<SpriteRenderer> ();
         GameObject shooter = GameObject.Find("Main Camera");
         shoot = shooter.GetComponent<Shooter>();
         bounce = 0;
@@ -29,10 +32,20 @@ public class DuckMovement : MonoBehaviour
 	
 	void Update ()
 	{
-		if (Input.GetKeyUp (KeyCode.P) || Input.GetKeyUp(KeyCode.Escape))
+		if (Input.GetKeyUp (KeyCode.P) || Input.GetKeyUp (KeyCode.Escape))
+		{
 			paused = !paused;
+			if (paused)
+				duckSprite.enabled = false;
+			if (!paused) 
+				duckSprite.enabled = true;
+		}
+
 		if (paused)
+		{
 			Time.timeScale = 0;
+		}
+
 		if (!paused) 
 		{
 			Time.timeScale = 1;
