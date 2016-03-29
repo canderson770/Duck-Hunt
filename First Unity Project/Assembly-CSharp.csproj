@@ -45,20 +45,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CloudMovement.cs" />
-     <Compile Include="Assets\DirectionChanger.cs" />
-     <Compile Include="Assets\DogControl.cs" />
-     <Compile Include="Assets\DogLayerSwitch.cs" />
-     <Compile Include="Assets\DuckHealth.cs" />
-     <Compile Include="Assets\DuckMovement.cs" />
-     <Compile Include="Assets\DuckSpawn.cs" />
-     <Compile Include="Assets\GUI.cs" />
-     <Compile Include="Assets\GameManager.cs" />
-     <Compile Include="Assets\PauseGame.cs" />
-     <Compile Include="Assets\SetSpawnPoint.cs" />
-     <Compile Include="Assets\Shooter.cs" />
-     <Compile Include="Assets\scroll.cs" />
-     <Compile Include="Assets\titleScreen.cs" />
+     <Compile Include="Assets\Scripts\BackToMenu.cs" />
+     <Compile Include="Assets\Scripts\DirectionChanger.cs" />
+     <Compile Include="Assets\Scripts\DogControl.cs" />
+     <Compile Include="Assets\Scripts\DogLayerSwitch.cs" />
+     <Compile Include="Assets\Scripts\DuckHealth.cs" />
+     <Compile Include="Assets\Scripts\DuckMovement.cs" />
+     <Compile Include="Assets\Scripts\DuckSpawn.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\PauseGame.cs" />
+     <Compile Include="Assets\Scripts\SetSpawnPoint.cs" />
+     <Compile Include="Assets\Scripts\Shooter.cs" />
+     <Compile Include="Assets\Scripts\StartGameTitle.cs" />
+     <Compile Include="Assets\Scripts\StaticVars.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
